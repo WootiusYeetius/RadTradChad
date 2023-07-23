@@ -43,7 +43,7 @@ everyFreakingIntegerUntil175BecauseOfCourse = [0]
 for p in range(175):
     everyFreakingIntegerUntil175BecauseOfCourse.append(p)
 
-TOKEN = "Bot token goes here"
+TOKEN = "Bot token"
 GENERAL_CHANNEL = "Put a channel id here if you want"
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 
@@ -52,8 +52,8 @@ async def on_ready():
     print("The bot is ready")
 
 @bot.command()
-async def truth(ctx):
-    await ctx.send("Luther was a heretic")
+async def greet(ctx):
+    await ctx.send("Hello, everyone")
 
 #Correct code below, just can't send long enough messages w/out nitro
 '''
